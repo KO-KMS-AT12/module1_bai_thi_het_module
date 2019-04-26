@@ -1,5 +1,5 @@
 function isPrime(number) {
-    if(!isNaN(number)){
+    if (!isNaN(number)) {
         if (number < 2) return false;
         else {
             for (let i = 2; i <= Math.sqrt(number); i++) {
@@ -7,9 +7,10 @@ function isPrime(number) {
             }
         }
         return true;
-    }
+    } else return false;
 
 }
+
 console.log(isPrime(12));
 console.log(isPrime(17));
 console.log(isPrime('b'));
